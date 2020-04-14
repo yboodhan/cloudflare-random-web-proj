@@ -1,0 +1,4 @@
+Objectives: randomly send users one of two webpages.
+
+Tools: Cloudflare Workers API, Wrangler, workers.dev
+
