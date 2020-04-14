@@ -19,9 +19,15 @@ async function handleRequest(request) {
     randomVariantIndex = 0;
   }
 
-  // Request a variant
-  let variant = await fetch(data.variants[randomVariantIndex]);
+  // Get the random URL
+  let variant = data.variants[randomVariantIndex];
+
+  // Request a variant, fetch (CAN RETURN THIS! BUT... LET'S REDIRECT.)
+  let variantResponse = await fetch(variant);
+
+  // Redirect to the randomly selected webpage
+  var redirect = Response.redirect(variant, 302);
 
   // Check the data we got
-  return new Response(JSON.stringify(variant));
+  return redirect;
 }
