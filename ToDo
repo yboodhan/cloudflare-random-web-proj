@@ -2,3 +2,6 @@ Objectives: randomly send users one of two webpages.
 
 Tools: Cloudflare Workers API, Wrangler, workers.dev
 
+  // let parser = new DOMParser();
+  // let view = parser.parseFromString(variant.text(), 'text/html');
+
