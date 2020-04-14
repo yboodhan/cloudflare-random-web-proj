@@ -1,6 +1,6 @@
 name = "cloudflare-random-web-proj"
 type = "javascript"
-account_id = ""
+account_id = "af8beea97d779ddff1f0b74060bb3e12"
 workers_dev = true
 route = ""
 zone_id = ""
